@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个人的历程</title>
+    <style>
+         body{background-image:url("图片/2.jpg");background-repeat:no-repeat;background-attachment: fixed;background-size:cover;zoom: 0.75;}
+        .guide{display: flex;flex-direction: row;flex: 2;background-color: white;border-radius: 10px;width: 1000px;margin: auto;margin-top: 60px;}
+        .g1{display: flex;flex:1;flex-direction:row;justify-content: space-evenly;font-size: 30px;}
+        .headT{text-decoration: none;text-align: center;color: black;}
+        .g1 a:hover{background-color:rgb(74, 188, 233);color:white;}
+        .menu{list-style-type:none;margin:0;padding:0;width: 120px;height:50%;margin-left: 10%;
+            background-color: #f1f1f1;position: absolute;display: flex;flex:2;flex-direction:column;}
+        .page b{display: block;color: #000;padding:8px 16px;text-decoration: none;padding: 30px 5px;font-size: 16px;text-align: center;}
+        .page b:hover{background-color:rgb(85, 85, 85);color:white;}
+        button{background-color: rgb(90, 158, 236);color: rgb(255, 212, 71);font-size: 30px;border: 5px wheat solid;border-radius: 20px;float: inline-end;text-align: center;margin-left: -100px;}
+        pre{float:inline-start;font-size: 22px;position:absolute;margin-left: 550px;margin-top: 200px;color: rgb(3, 28, 109);}
+        td{zoom:1;padding: 20px;}
+        td:hover{zoom:1.3}
+        .word{font-size: 50px;text-decoration: none;color: rgb(6, 75, 0);}
+       
+    </style>
+    
+</head>
+<body>
+    <ul class="guide">
+        <li class="g1"><a class="headT" href="大作业——个人网站首页.html"><b>Home</b></a></li>
+        <li class="g1"><a class="headT" href="子页/我的历程.html"><b>My Journey</b></a></li>
+        <li class="g1"><a class="headT" href="子页/我的作品.html"><b>Projects</b></a></li>
+        <li class="g1"><a class="headT" href="子页/我的组织.html"><b>Organization</b></a></li>
+    </ul>
+    <div style="margin: 100px;">
+    <ul class="menu"><strong>
+        <li class="page" > <b onclick="page1()" id="l1">平面作品</b></li>
+        <li class="page" ><b onclick="page2()" id="l2">视频作品</b></li>
+        <li class="page" ><b onclick="page3()" id="l3">文字作品</b></li>
+        <li class="page"><b onclick="page4()" id="l4">......</b></li>
+        </strong></ul>
+        
+
+
+        <div style="margin-left:25%;padding: 1px 16px;background-color: rgba(255, 255, 255, 0.575);height: 800px;width: 900px;" >
+            
+            <div id="p1" style="display: block;">
+                <div style="display: block;" id="pic1"><strong>
+                    <img src="图片/海报一.png" style="float: left;margin: 50px;" width="50%">
+                    <pre>海报一主要以蓝色系为主
+以蓝色为主的水彩涂抹青绿背景
+隐喻西湖之水
+同时又为海报整体增色
+蓝色的集贤亭剪影
+主要是为了突出举办地在杭州
+且杭州有西湖这一显著特征
+其上的人影也隐喻着
+全民运动的主题
+本海报选择红色作为人物色
+突出体验运动热血、激昂的特点
+是运动员与观众的热情的展现。
+主要展现运动会之动感
+                        
+                        <button onclick="swich1()">切换</button>
+                    </pre>  
+                </div>
+                <div style="display: none;" id="pic2">
+                    <img src="图片/海报二.png" style="float: left;margin: 50px;"width="50%">
+                    <pre>海报二以黄灰色为主
+选取三潭印月之景
+配以体操人物形象
+尽显运动会之中的静态之美
+并同时与一三两张动态海报形成对比
+增加不一样的韵味
+                        <button onclick="swich2()">切换</button>
+                    </pre>
+                </div>
+                <div style="display: none;" id="pic3">
+                    <img src="图片/海报三.png" style="float: left;margin: 50px;"width="50%">
+                    <pre>青黄色的基调
+象征运动会动静之间
+所流露出的生机
+雷峰塔剪影
+以表现举办地杭州
+明快的黄色
+配上最为简单的运动——跑步
+既彰显了健康运动、全民运动的理念
+又有一种在自然中运动的呼吁
+                        <button onclick="swich3()">切换</button>
+                    </pre>
+                </div></strong>
+            </div>
+            
+
+            <div id="p2" style="display: none;">
+                <table style="text-align: center;margin:auto;margin-top:10%">
+                    <tr>
+                        <td><a href="https://mp.weixin.qq.com/s/2ty0FjyKoTwjZC_oCZGfUA"><img src="图片/视频1.png"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://mp.weixin.qq.com/s/5ACLhy3D8968gz7alD8hhg"><img src="图片/视频2.png"></a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div id="p3" style="display: none;">
+                <table style="text-align: center;margin:auto;margin-top:10%">
+                    <tr>
+                        <td><a href="https://www.bilibili.com/video/BV1wy4y1H7H8" class="word">《雨霖铃》</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://h5.qzone.qq.com/ugc/share?ticket=&stat=&srctype=10&g_f=2000000209&no_topbar=1&res_uin=1559130406&appid=311&cellid=2671ee5c4331ad5fb46c0d00&subid=&g_ut=3&plg_dev=1&plg_usr=1&plg_auth=1&plg_nld=1&plg_uin=1" class="word">《苏幕遮•酬花御斋主人》</a></td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div id="p4" style="display: none;">
+                <table style="text-align: center;margin:auto;margin-top:10%">
+                    <img src="图片/施工中.png" style="margin:auto;display:block;text-align: center;margin-top: 100px;">
+                </table>
+
+            </div>
+
+
+
+        <script>
+            var p1=document.getElementById("p1");
+            var l1=document.getElementById("l1")
+            function page1(){
+            if(p1.style.display=='none'){
+                p1.style.display='block'
+                l1.style.backgroundColor='rgb(67, 186, 233)'
+                l1.style.color='white'
+                l2.style.backgroundColor='#f1f1f1'
+                l2.style.color='black'
+                l3.style.backgroundColor='#f1f1f1'
+                l3.style.color='black'
+                l4.style.backgroundColor='#f1f1f1'
+                l4.style.color='black'
+                p2.style.display='none'
+                p3.style.display='none'
+                p4.style.display='none'
+
+            }
+            else{
+                p1.style.display='none'
+                l1.style.backgroundColor='#f1f1f1'
+                l1.style.color='black'
+            }
+            }
+
+            var p2=document.getElementById("p2");
+            function page2(){
+            if(p2.style.display=='none'){
+                p2.style.display='block'
+                l2.style.backgroundColor='rgb(67, 186, 233)'
+                l2.style.color='white'
+                l1.style.backgroundColor='#f1f1f1'
+                l1.style.color='black'
+                l3.style.backgroundColor='#f1f1f1'
+                l3.style.color='black'
+                l4.style.backgroundColor='#f1f1f1'
+                l4.style.color='black'
+                p1.style.display='none'
+                p3.style.display='none'
+                p4.style.display='none'
+            }
+            else{
+                p2.style.display='none'
+                l2.style.backgroundColor='#f1f1f1'
+                l2.style.color='black'
+            }
+            }
+
+            var p3=document.getElementById("p3");
+            function page3(){
+            if(p3.style.display=='none'){
+                p3.style.display='block'
+                l3.style.backgroundColor='rgb(67, 186, 233)'
+                l3.style.color='white'
+                l1.style.backgroundColor='#f1f1f1'
+                l1.style.color='black'
+                l2.style.backgroundColor='#f1f1f1'
+                l2.style.color='black'
+                l4.style.backgroundColor='#f1f1f1'
+                l4.style.color='black'
+                p1.style.display='none'
+                p2.style.display='none'
+                p4.style.display='none'
+            }
+            else{
+                p3.style.display='none'
+                l3.style.backgroundColor='#f1f1f1'
+                l3.style.color='black'
+            }
+            }
+
+            var p4=document.getElementById("p4");
+            function page4(){
+            if(p4.style.display=='none'){
+                p4.style.display='block'
+                l4.style.backgroundColor='rgb(67, 186, 233)'
+                l4.style.color='white'
+                l1.style.backgroundColor='#f1f1f1'
+                l1.style.color='black'
+                l2.style.backgroundColor='#f1f1f1'
+                l2.style.color='black'
+                l3.style.backgroundColor='#f1f1f1'
+                l3.style.color='black'
+                p1.style.display='none'
+                p2.style.display='none'
+                p3.style.display='none'
+            }
+            else{
+                p4.style.display='none'
+                l4.style.backgroundColor='#f1f1f1'
+                l4.style.color='black'
+            }
+            }
+
+            var pic1=document.getElementById('pic1'); 
+            function swich1 () {
+                pic1.style.display='none'
+                pic2.style.display='block'
+            }
+
+            var pic2=document.getElementById('pic2'); 
+            function swich2 () {
+                pic2.style.display='none'
+                pic3.style.display='block'
+            }
+            
+            var pic3=document.getElementById('pic3'); 
+            function swich3 () {
+                pic3.style.display='none'
+                pic1.style.display='block'
+            }
+        </script>
+</body>
+</html>

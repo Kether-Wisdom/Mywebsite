@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一个人的历程</title>
+    <style>
+         body{background-image:url("图片/1.png");background-repeat:no-repeat;background-attachment: fixed;background-size:cover;zoom: 0.75;}
+        .guide{display: flex;flex-direction: row;flex: 2;background-color: white;border-radius: 10px;width: 1000px;margin: auto;margin-top: 60px;}
+        .g1{display: flex;flex:1;flex-direction:row;justify-content: space-evenly;font-size: 30px;}
+        .headT{text-decoration: none;text-align: center;color: black;}
+        li a:hover{background-color:rgb(74, 188, 233);color:white;}
+        pre{font-size: 25px;background-color: rgba(255, 255, 255, 0.507);padding: 50px;}
+        table{text-align: center;margin: auto;zoom:0.5;padding: 150px;}
+        td{margin: 50px;background-color: rgba(255, 255, 255, 0.507);}
+    </style>
+    <script>
+        function talk(){
+            var Pic = new Array("图片/气泡0.png","图片/气泡3.png","图片/气泡4.png","图片/气泡5.png","图片/气泡6.png");
+            var Num = Math.floor((Math.random() * Pic.length));
+            document.getElementById("P1").src = Pic[Num];
+            }
+    </script>
+</head>
+<body>
+    <ul class="guide">
+        <li class="g1"><a class="headT" href="大作业——个人网站首页.html"><b>Home</b></a></li>
+        <li class="g1"><a class="headT" href="子页/我的历程.html"><b>My Journey</b></a></li>
+        <li class="g1"><a class="headT" href="子页/我的作品.html"><b>Projects</b></a></li>
+        <li class="g1"><a class="headT" href="子页/我的组织.html"><b>Organization</b></a></li>
+    </ul>
+    <div style="position: -webkit-sticky;position: sticky;top: 100px;;padding: 5px;float: left;padding-top: 250px;z-index:10;">
+        <img src="图片/看板娘_黯灭.png" style="zoom:0.6;" onclick="talk()" id="swa1" >
+        <img src="图片/气泡0.png" height=200 style="float:right;display: block;" id="P1">
+    </div>
+    <div style="margin: auto;text-align: center;display: block;width: 800px;">
+    <img src="图片/logo.jpg" style="margin: auto;text-align: center;zoom:0.3;display: block;padding: 200px;padding-bottom: 100px;position:relative;">
+    </div>
+    <div style="margin: auto;text-align: center;display: block;width: 800px;">
+        <p><pre>
+<strong>我们愿以影像
+记录下青年眼中的世界
+只为了我们心中的热爱</strong>
+二十四帧影视工作室，成立于2021年5月4日
+欢迎有兴趣有精力的小伙伴加入
+只要有时间我们就可以一起玩耍一起做项目
+
+我们是一个
+有趣，有爱，有内容，有态度的
+小而美的社团
+
+<strong>二十四帧影视，期待你的加入！</strong>
+        </pre></p>
+    </div>
+<table cellspacing="100">
+    <tr>
+        <td><img src="图片/组织1.png"></td>
+        <td><img src="图片/组织2.png"></td>
+        <td><img src="图片/组织3.png"></td>
+    </tr>
+</table>
+<br><br><br>
+
+
+</body>
+</html>
