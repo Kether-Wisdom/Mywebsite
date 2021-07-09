@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{background-image:url("图片/背景.png");background-repeat:no-repeat;background-attachment: fixed;background-size: cover;zoom: 0.75;}
+            .guide{display: flex;flex-direction: row;flex: 2;background-color: white;border-radius: 10px;width: 1000px;margin: auto;margin-top: 60px;}
+            .g1{display: flex;flex:1;flex-direction:row;justify-content: space-evenly;font-size: 30px;}
+            .headT{text-decoration: none;text-align: center;color: black;}
+            li a:hover{background-color:rgb(74, 188, 233);color:white;}
+            P{font-size: 50px;
+            margin: -140px;
+            margin-left: 450px;
+            margin-top: 10px;
+            color: rgb(255, 166, 0);
+            text-align: center;
+            border-radius: 100px;
+            background-color: crimson;
+            width: 65px;
+            z-index: 10;
+            position: relative;}
+            .text::before {
+            content: "!";}
+
+            .text:hover::before {
+            content: "个人信息";}
+            .text:hover {
+                width: 150px;
+                height: 50px;
+                background-color:rgba(255, 255, 255, 0.514);
+                color: rgb(22, 97, 235);
+                font-size: 30px;
+                padding-top: 10px;} 
+            table{display:none;
+            width: 800px;
+            font-size: 25px;
+            background-color:rgba(255, 255, 255, 0.575);
+            margin-left: 800px;
+            margin-top: 150px;
+            position: relative;
+            line-height:50px;
+            color: rgb(0, 0, 0);
+            padding: 20px;}
+            th{text-align: left;
+            }
+        </style>
+        <title>一个人的首页</title>
+    </head>
+
+    <body>
+        <ul class="guide">
+            <li class="g1"><a class="headT" href="大作业——个人网站首页.html"><b>Home</b></a></li>
+            <li class="g1"><a class="headT" href="子页/我的历程.html"><b>My Journey</b></a></li>
+            <li class="g1"><a class="headT" href="子页/我的作品.html"><b>Projects</b></a></li>
+            <li class="g1"><a class="headT" href="子页/我的组织.html"><b>Organization</b></a></li>
+        </ul>
+        <br>        
+        <img src="图片/气泡.png" height=200 style="float: left;margin-right: -450px;margin-left: 300px;">
+        <div class="d1" style="position: fixed;margin-left: 250px;margin-top: 60px;float: left;position: relative;">
+            <p class="text" id="t1" onclick="jieshao()"></P>
+            <img class="people" src="图片/人.png" height="800" style="position: relative;">
+        </div>
+        <table id="char"> 
+            <tr>
+                <th>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：</th>
+                <td>俞昊成</td>
+            </tr>
+            <tr>
+                <th>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：</th>
+                <td>男</td>
+            </tr>
+            <tr>
+                <th>擅长领域：</th>
+                <td>文字写作、视频制作、手工制作等</td>
+            </tr>
+            <tr>
+                <th>固有技能：</th>
+                <td>【高速创作（文字）】【夜晚的庇护】【极端运气】</td>
+            </tr>
+            <tr>
+                <th>所属组织:</th>
+                <td>二十四帧影视工作室</a></td>                
+            </tr>
+            <tr>
+                <Th>电话：</Th>
+                <td>19857192620</td>
+            </tr>
+            <tr>
+                <th>QQ：</th>
+                <td>1559130406</td>
+            </tr>
+        </table>
+    
+    <script>
+        var char=document.getElementById("char");
+        function jieshao(){
+        if(char.style.display=='none'){
+            char.style.display='block'
+        }
+        else{
+            char.style.display='none'
+        }
+        }
+    </script>
+        
+
+    </body>
+    </html>
